@@ -48,6 +48,29 @@ void setupPlayer();
 
 float levelComplete = 0;
 
+//[hzm singeplayer fix 1.00] chrissstrahl - this fixes floating in space
+//com_mxfps is set best before player joins and then checked while player is in game
+void hzmSpFix_checkComMxFps()
+{
+	waitForPlayer();
+	float hzmSpFix_fps = 0;
+	string sMessage;
+	sMessage = "com_mxfps set to 75 to fix a game bug!\n";
+	while(1){
+		wait(1);
+		hzmSpFix_fps = getCvarInt("com_maxfps");
+		if(hzmSpFix_fps > 75)
+		{
+			//print message to hud and console/logfile
+			centerprint(sMessage);
+			print("HZM Singleplayer Fix Mod: "+sMessage);
+			setCvar("com_maxfps","75");
+			stuffcmd("seta restore_com_maxfps "+hzmSpFix_fps+"\n");
+		}
+	}
+}
+//end fix
+
 #include "maps/global_scripts/global_common.scr"
 #include "maps/global_scripts/global_debugUtils.scr"
 #include "maps/global_scripts/global_playerLoadout.scr"
@@ -154,10 +177,14 @@ void main()
 {
 	//--- fade the world out
 	cam_fadeout( .1, 0, 0, 0, 1, 0 );
-	letterbox( .1 );
-	cinematic();
-
 	level_ai ( 0 );
+
+	float hzmSpFix_fps = 0;	hzmSpFix_fps = getCvarInt("com_maxfps"); //<- [hzm singeplayer fix 1.00] chrissstrahl - Original -> //
+	if(hzmSpFix_fps > 75){ setCvar("com_maxfps","75"); stuffcmd("seta restore_com_maxfps "+hzmSpFix_fps+"\n"); } //<- [hzm singeplayer fix 1.00] chrissstrahl - Original -> //
+	thread hzmSpFix_checkComMxFps(); //<- [hzm singeplayer fix 1.00] chrissstrahl - Original -> //
+
+	letterbox( .1 );
+	cinematic();	
 
 	//--- set the soundtrack
 	soundtrack( "music/m6l1.mus" );

@@ -167,6 +167,28 @@ string doorBloodModel = "fx/fx-explosion-metaldebris-directional.tik";
 vector originStash;
 vector anglesStash;
 
+//[hzm singeplayer fix 1.00] chrissstrahl - this fixes floating in space
+//com_mxfps is set best before player joins and then checked while player is in game
+void hzmSpFix_restoreComMxFps()
+{
+	string sMessage;
+	sMessage = "com_mxfps set to 75 to fix a game bug!\n";
+	float hzmSpFix_fps = 0;
+	float hzmSpFix_fpsRestore = 0;
+	hzmSpFix_fps = getCvarInt("com_maxfps");
+	hzmSpFix_fpsRestore = getCvarInt("restore_com_maxfps");
+	
+	if(hzmSpFix_fps != hzmSpFix_fpsRestore){
+		setCvar("com_maxfps",""+hzmSpFix_fpsRestore);
+		
+		waitForPlayer();
+		print("HZM Singleplayer Fix Mod: "+sMessage);		
+		
+		setCvar("restore_com_maxfps",""+hzmSpFix_fpsRestore);
+	}
+}
+//end fix
+
 
 //==========================================================================================
 // Includes
@@ -189,6 +211,11 @@ vector anglesStash;
 
 void main()
 {
+	//Faded while we set up everything
+	cam_fadeout( .05, 0, 0, 0, 1, 0 );
+	
+	thread hzmSpFix_restoreComMxFps(); //<- [hzm singeplayer fix 1.00] chrissstrahl - restores setting that have been changed to fix space floating bug in mission 6
+
 	soundtrack( "music/m7l1-attrexian_colony.mus" );
 //	$sky.rendereffects( "+skyorigin" );
 	$world.entity_fade_dist( 6000 );
@@ -197,9 +224,6 @@ void main()
 	$world.farplane ( 4000 );
 
 	$world.weather( "rain", 400 );
-
-	//Faded while we set up everything
-	cam_fadeout( .05, 0, 0, 0, 1, 0 );
 
 	//--- setup
 	setupWorld();
