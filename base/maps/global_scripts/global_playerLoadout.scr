@@ -1080,7 +1080,7 @@ void globalLoadout_m6_deck16_engineering()
 		globalLoadout_GiveWeapon( WEAPON_NONE );
 		globalLoadout_GiveViewmode( VIEWMODE_STRUCTURAL_INTEGRITY );
 		
-		globalLoadout_TakeWeapon( WEAPON_GRENADE_LAUNCHER )//<- [hzm singeplayer fix 1.00] chrissstrahl [take weapon as it does to much splash damage] - Original -> //
+		globalLoadout_TakeWeapon( WEAPON_GRENADE_LAUNCHER ); //<- [hzm singeplayer fix 1.00] chrissstrahl [take weapon as it does to much splash damage] - Original -> //
 	}
 	else
 	{
