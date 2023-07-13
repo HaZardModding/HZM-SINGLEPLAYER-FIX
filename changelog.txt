@@ -6,6 +6,8 @@ Changes are are commented like this:
 
 Version 1.00
 ==================================
+projectile-commander-gooball.tik - Commander Mission 11
+	Reduced knockback damage from 250 to 25 to prevent fall damage being added ontop of projectile damage
 projectile-commander-missile.tik - Commander Mission 11
 	Reduced knockback damage from 400 to 40 to prevent fall damage being added ontop of projectile damage
 projectile-cmdr-missile-turret.tik - Commander Mission 11
