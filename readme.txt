@@ -15,6 +15,16 @@ Compatibility
 
 Changes/Fixes - Version 1.00
 ==================================
-- Reduced (400->40) kockback of Alien Commander from Mission 11 to prevent
-players getting killed by fall damage rather than the actual
+- Reduced kockback of Alien Commander from Mission 11 by a factor of 10
+to prevent players getting killed by fall damage rather than the actual
 projectile damage.
+- Remove Granade Launcher from the inventory because it was doing to much
+splash damage on Engineering Level at Mission 6
+
+
+Affected Files:
+==================================
+models/projectile/projectile-commander-gooball.tik
+models/projectile/projectile-commander-missile.tik
+models/projectile/projectile-cmdr-missile-turret.tik
+maps/global_scripts/global_playerLoadout.scr
