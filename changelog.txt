@@ -1,0 +1,10 @@
+Notes
+==================================
+Changes are are commented like this:
+//<- [hzm singeplayer fix <version>] <username> - Original -> //
+
+
+Version 1.00
+==================================
+projectile-commander-missile.tik - Commander Mission 11
+	Reduced knockback Damage from 400 to 40 to prevent fall damage being added ontop of projectile damage
