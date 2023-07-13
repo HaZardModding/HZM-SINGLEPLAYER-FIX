@@ -6,6 +6,14 @@ Changes are are commented like this:
 
 Version 1.00
 ==================================
+maps/m6-exterior.scr - function main()
+	Added Code to change com_maxfps to 75 to fix gravity/floating bug
+maps/m7l1b-attrexian_colony.scr - function main()
+	Added Code to restore com_maxfsp to previouse settings
+maps/m7l1b-attrexian_colony.scr - function setupCrateMonster()
+	Fixed Crate Monster being invisible, using fix from HZM Coop Mod
+maps/m7l1b-attrexian_colony.scr - function crateMonsterAttack()
+	Fixed Crate Monster being invisible, using fix from HZM Coop Mod
 models/projectile/projectile-commander-gooball.tik - Commander Mission 11
 	Reduced knockback damage from 250 to 25 to prevent fall damage being added ontop of projectile damage
 models/projectile/projectile-commander-missile.tik - Commander Mission 11

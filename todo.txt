@@ -1,26 +1,8 @@
-ChristianStrahl
-
-I have decided to create a Mod specific for the Singleplayer that changes only things that are a issue.
-The idea is not to make the game esier or something but to fix issues that should not be there in the first place.
-
-If you have any suggestions or remarks please go ahead and share them.
-
-This is the list of things that need fixing so far:
 Menu and Settings
 Allow to select a screen resolution and fov, this will basically copied from the HZM Coop Mod.
 
-Mission 6 - Engineering
-Remove Granade Launcher from inventory as players don't understand what is happening with the splashdamage situation and quickly fail the mission, which makes for a high frustration factor, once you understand what the issue is you don't use that weapon anyway.
-
 Mission 6 - Exterior
-Fix gravity bug players drifting in space and not comming down.
 Exterior Cannon Primary fire modus not showing pulse beams might need a flushtiki on starting sequence 2 cin.
-
-Mission 7 - Secret Crate Monster
-Make crate monster visible using crates or check if player has shadows turned on and temporarly activate shadows until the monster is killed. (If Monster should become visible, this will basically copied from the HZM Coop Mod.)
-
-Mission 11 - Commander fight
-The Commander has granades that give a unusuall ammount of pushing force, when the player is hit from above the forces multiplay with gravity some how, killiong players from massive fall damage. This appears to be a bug, there is no indication that it was actually designed and wanted this way, there are other cases where similar bugs happen but non are as servere.
 
 Infotexts/hud could be added to give player guidance on dificult sequences like:
 1. Final Boss first sequence fight with the Shielded Control Room, as people often don't figure that one out.

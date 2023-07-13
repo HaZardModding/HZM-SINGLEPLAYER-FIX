@@ -20,6 +20,8 @@ to prevent players getting killed by fall damage rather than the actual
 projectile damage.
 - Remove Granade Launcher from the inventory because it was doing to much
 splash damage on Engineering Level at Mission 6
+- Fixed Crate Monster being invisible on Mission 7
+- Fixed Floating/Gravity bug in Mission 6 Exterior
 
 
 Affected Files:
@@ -28,3 +30,6 @@ models/projectile/projectile-commander-gooball.tik
 models/projectile/projectile-commander-missile.tik
 models/projectile/projectile-cmdr-missile-turret.tik
 maps/global_scripts/global_playerLoadout.scr
+maps/m7l1b-attrexian_colony.scr
+maps/m7l1a-attrexian_colony.scr
+maps/m6-exterior.scr
