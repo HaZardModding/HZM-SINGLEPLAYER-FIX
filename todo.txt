@@ -1,8 +1,6 @@
 Menu and Settings
 Allow to select a screen resolution and fov, this will basically copied from the HZM Coop Mod.
 
-Mission 5 - Gascamber, show info how to seal it (Use phaser, maybe make player use the tricorder/phaser after some time)
-
 Mission 6 - Exterior
 Exterior Cannon Primary fire modus not showing pulse beams might need a flushtiki on starting sequence 2 cin.
 
