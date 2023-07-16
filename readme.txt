@@ -22,6 +22,7 @@ projectile damage.
 splash damage at Mission 6, Enterprise Engineering ( Destruction )
 - Fixed Crate Monster being invisible on Mission 7, Attrexian Colony ( Search and Rescue )
 - Fixed Floating/Gravity bug in Mission 6 Enterprise, Exterior ( Remove and Disable )
+- Possibly fixed Missing fog on first level of Mission 8, Idryll Planet ( Payback )
 
 
 Usage notice:

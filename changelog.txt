@@ -17,6 +17,16 @@ maps/m6-exterior.scr
 
 Version 1.00
 ==================================
+maps/m8l1a-drull_ruins2.scr
+	I don't know yet what is causing the issue or how to recrate it, so the Changes
+	below are based on guesses and may not even work.
+maps/m8l1a-drull_ruins2.scr - function main()
+	Added fog code with really high distance, to make sure fog actually gets rendered
+	without breaking the Cinematics.
+maps/m8l1a-drull_ruins2.scr - function cinematicArm_PostCrash_ArmEnd()
+	Added fog commands after the cinemtic to make sure fog actually gets rendered.
+	
+
 maps/m6-exterior.scr - function main()
 	Added Code to change com_maxfps to 75 to fix gravity/floating bug
 maps/m7l1b-attrexian_colony.scr - function main()

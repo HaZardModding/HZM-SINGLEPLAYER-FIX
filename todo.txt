@@ -1,34 +1,10 @@
 Menu and Settings
 Allow to select a screen resolution and fov, this will basically copied from the HZM Coop Mod.
 
-Mission 5 - Gascamber, show info how to seal it (Use phaser, maybe make player use the phaser after some time)
+Mission 5 - Gascamber, show info how to seal it (Use phaser, maybe make player use the tricorder/phaser after some time)
 
 Mission 6 - Exterior
 Exterior Cannon Primary fire modus not showing pulse beams might need a flushtiki on starting sequence 2 cin.
-
-Mission 8
-m8l1a-drull_ruins has no fog but m8l1b does, so does it need a waitforplayer ?
-
-m8l1a
-	$sky.rendereffects( "+skyorigin" );
-	$world.entity_fade_dist( 20000 );
-	$world.farplane_color ( '0.1 0.11 0.1' );
-	$world.farplane ( 4000 );
-	$starDome.hide();
-	//--- release the cinematic
-	noncinematic();
-	clearletterbox( .1 );
-	releaseplayer();
-	cueplayer();
-	wait( .5 );
-	cam_fadein( .5, 0, 0, 0, 1, 0 );
-m8l1b
-	$sky.rendereffects( "+skyorigin" );
-	$world.weather( "rain", 400 );
-	$world.entity_fade_dist( 10000 );
-	$world.farplane_color ( '0.1 0.12 0.1' );
-	$world.farplane ( 3200 );
-
 
 Infotexts/hud could be added to give player guidance on dificult sequences like:
 1. Final Boss first sequence fight with the Shielded Control Room, as people often don't figure that one out.
