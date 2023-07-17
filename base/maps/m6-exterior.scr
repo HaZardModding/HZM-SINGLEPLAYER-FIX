@@ -59,7 +59,7 @@ void hzmSpFix_checkComMxFps()
 	while(1){
 		wait(1);
 		hzmSpFix_fps = getCvarInt("com_maxfps");
-		if(hzmSpFix_fps > 75)
+		if(hzmSpFix_fps > 75 || hzmSpFix_fps == 0)
 		{
 			//print message to hud and console/logfile
 			centerprint(sMessage);
@@ -180,7 +180,7 @@ void main()
 	level_ai ( 0 );
 
 	float hzmSpFix_fps = 0;	hzmSpFix_fps = getCvarInt("com_maxfps"); //<- [hzm singeplayer fix 1.00] chrissstrahl - Original -> //
-	if(hzmSpFix_fps > 75){ setCvar("com_maxfps","75"); stuffcmd("seta restore_com_maxfps "+hzmSpFix_fps+"\n"); } //<- [hzm singeplayer fix 1.00] chrissstrahl - Original -> //
+	if(hzmSpFix_fps > 75 || hzmSpFix_fps == 0){ setCvar("com_maxfps","75"); stuffcmd("seta restore_com_maxfps "+hzmSpFix_fps+"\n"); } //<- [hzm singeplayer fix 1.00] chrissstrahl - Original -> //
 	thread hzmSpFix_checkComMxFps(); //<- [hzm singeplayer fix 1.00] chrissstrahl - Original -> //
 
 	letterbox( .1 );
