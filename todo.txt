@@ -4,6 +4,8 @@ Allow to select a screen resolution and fov, this will basically copied from the
 Mission 6 - Exterior
 Exterior Cannon Primary fire modus not showing pulse beams might need a flushtiki on starting sequence 2 cin.
 
+m8 stalker freezing by stuff, see coop for ai fix
+
 Infotexts/hud could be added to give player guidance on dificult sequences like:
 1. Final Boss first sequence fight with the Shielded Control Room, as people often don't figure that one out.
 2. Mission 6 Engineering, maybe show a warning hud when player destroys components of the ship
