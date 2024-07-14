@@ -4,7 +4,7 @@ Changes are are commented like this:
 //<- [hzm singeplayer fix <version>] <username> - Original -> //
 
 
-Affected Files:
+Affected Original Files:
 ==================================
 models/projectile/projectile-commander-gooball.tik
 models/projectile/projectile-commander-missile.tik
@@ -13,8 +13,44 @@ maps/global_scripts/global_playerLoadout.scr
 maps/m7l1b-attrexian_colony.scr
 maps/m7l1a-attrexian_colony.scr
 maps/m6-exterior.scr
+loc/Eng/ui/menu_video.urc
+loc/Eng/ui/menu_audio.urc
+loc/Deu/ui/menu_video.urc
+loc/Deu/ui/menu_audio.urc
+loc/Deu/stringresource/globalstrings.loc
+loc/Eng/stringresource/globalstrings.loc
 
 
+Version 1.01
+==================================
+coop_mod/cfg/changeres.cfg
+coop_mod/cfg/countdown.cfg
+coop_mod/cfg/countstop.cfg
+coop_mod/cfg/failsaveres.cfg
+coop_mod/cfg/menu_resfailsave.cfg
+coop_mod/cfg/menu_video_customreschange.cfg
+coop_mod/cfg/menu_video_set_resolution.cfg
+coop_mod/cfg/menu_video_testreshexit.cfg
+coop_mod/cfg/menu_video_testreshover.cfg
+coop_mod/cfg/testcustomres.cfg
+coop_mod/cfg/testres.cfg
+coop_mod/ui/background.inc
+coop_mod/ui/menu_video.inc
+ui/coop_resfailsave.urc
+ui/coop_resfailure.urc
+loc/Eng/ui/menu_video.urc
+loc/Deu/ui/menu_video.urc
+	Added support for modern resolutions in Video Settings Menu
+ui/menu_userfov.urc
+	Added Menu to allow Field of View adjustment
+loc/Eng/ui/menu_audio.urc
+loc/Deu/ui/menu_audio.urc
+	Enabled separate sliders for different audio channels adding Dialog and Effects Volume
+	Enabled checkbox for 8-Bit audio
+loc/Deu/stringresource/globalstrings.loc
+loc/Eng/stringresource/globalstrings.loc
+	Added global localized strings for the new Menu Options
+	
 Version 1.00
 ==================================
 maps/m8l1a-drull_ruins2.scr
@@ -25,8 +61,6 @@ maps/m8l1a-drull_ruins2.scr - function main()
 	without breaking the Cinematics.
 maps/m8l1a-drull_ruins2.scr - function cinematicArm_PostCrash_ArmEnd()
 	Added fog commands after the cinemtic to make sure fog actually gets rendered.
-	
-
 maps/m6-exterior.scr - function main()
 	Added Code to change com_maxfps to 75 to fix gravity/floating bug
 maps/m7l1b-attrexian_colony.scr - function main()
