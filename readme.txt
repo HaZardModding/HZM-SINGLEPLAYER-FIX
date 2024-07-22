@@ -18,7 +18,7 @@ Changes/Fixes - Version 1.00
 - Reduced kockback of Alien Commander from Mission 11 ( End Game 2 ) by a factor of 10
 to prevent players getting killed by fall damage rather than the actual
 projectile damage.
-- Removed Granade Launcher from the inventory because it was doing to much
+- Removed Grenade Launcher from the inventory because it was doing to much
 splash damage at Mission 6, Enterprise Engineering ( Destruction )
 - Fixed Crate Monster being invisible on Mission 7, Attrexian Colony ( Search and Rescue )
 - Fixed Floating/Gravity bug in Mission 6 Enterprise, Exterior ( Remove and Disable )

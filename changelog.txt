@@ -45,7 +45,7 @@ ui/menu_userfov.urc
 	Added Menu to allow Field of View adjustment
 loc/Eng/ui/menu_audio.urc
 loc/Deu/ui/menu_audio.urc
-	Enabled separate sliders for different audio channels adding Dialog and Effects Volume
+	Added additional sliders for Dialog and Effects Volume
 	Enabled checkbox for 8-Bit audio
 loc/Deu/stringresource/globalstrings.loc
 loc/Eng/stringresource/globalstrings.loc
@@ -76,6 +76,6 @@ models/projectile/projectile-commander-missile.tik - Commander Mission 11
 models/projectile/projectile-cmdr-missile-turret.tik - Commander Mission 11
 	Reduced knockback damage from 400 to 40 to prevent fall damage being added ontop of projectile damage
 maps/global_scripts/global_playerLoadout.scr - function globalLoadout_m6_deck16_engineering()
-	Remove Granade Launcher from the inventory because it was doing to much splash damage on Engineering Level
+	Remove Grenade Launcher from the inventory because it was doing to much splash damage on Engineering Level
 maps/global_scripts/global_playerLoadout.scr - function globalLoadout_m6_deck1_bridge_redalert()
 	Added back removed Granade Launcher to inventory for the Bridge level
