@@ -1,2 +1,2 @@
 # HZM-SINGLEPLAYER-FIX
- A Mod that fixes issues with the Singleplayer game
+ A Star Trek: Elite Force II Mod that fixes issues with the Singleplayer game
